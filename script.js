@@ -7,6 +7,7 @@ var countDownFrom = 10;
 var currentSecond = 11;
 var timerId = 0;
 
+<<<<<<< HEAD
 function gameLoop () {
 	generateRandomNumber ();
 	randomNumber = 5;  //debug only
@@ -74,3 +75,38 @@ function endGame() {
 }
 
 //soren
+=======
+function gameLoop ()  {
+generateRandomNumber ();
+randomNumber = 5; //debug only
+equalityCheck ();
+updateHtmlContent ();
+//secondCountDown();
+}
+
+function generateRandomNumber () {
+randomNumber = Math.floor((Math.random() * 10) +1);
+}
+
+function equalityCheck () {
+playerGuess = document.getElementById("playerGuessInput").value;
+playerGuess = Number (playerGuess) ;
+if (playerGuess === randomNumber) {
+   currentSecond = 11;
+   playerScore = playerScore + 1;
+   playerTip = "Correct, click to play again";
+   document.getElementById ("playButton").value = "Play now";
+   //clearTimeout(timerId);
+}
+}
+
+function updateHtmlContent () {
+   document.getElementById("playerScoreContent").innerHTML = playerScore;
+   document.getElementById("computerScoreContent").innerHTML
+   document.getElementById ("tipContent").innerHTML = playerTip;
+   }
+
+function secondCountDown () {
+alert("secondCountDown is working")
+}
+>>>>>>> a7b920a8b77e7c98ed2bf7efe103d28d92b16b29
