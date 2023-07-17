@@ -12,6 +12,7 @@
 
 let playerScore;
 let computerScore;
+let playerGuess
 
 function gameLoop (playerClicked) {
 	
@@ -43,6 +44,23 @@ function gameLoop (playerClicked) {
 		alert ("Computer chose papers")
 	}
 	
+	if the playerGuess is 1 and randomNumber is 2 then add a score to playerGuess
+
+	if the playerGuess is 1 and randomNumber is 3 then add a score to computerChoice
+
+	if the playerGuess is 1 and the randomNumber is 1 then no score is added
+
+	if the playerGuess is 2 and computer chooses 1 then add a score to computer
+
+	if the playerScore is 2 and the computer chooses 2 then no score is added 
+
+	if the playerScore is 2 and the computer chooses 3 then add a score to the playerGuess
+	
+	if the playerscore is 3 and the computer chooses 1 then add a score to playerGuess
+
+	if the playerGuess is 3 and computer chooses 2 then add a score to computer
+	
+	if the playerGuess is 3 and the computer chooses 3 then no score is added at all
 
 
 	
